@@ -3,6 +3,9 @@ body{
     margin: 0;
     padding: 0;
     display: flexbox;
+    background-image: url(images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 html {
     scroll-behavior: smooth;
@@ -11,9 +14,6 @@ html {
     height: auto;
     text-align: center;
     padding: 100%;
-    h1, p {
-        font-weight: bold;
-    }
 }
 table{
     width: 100%;
@@ -33,6 +33,7 @@ table{
         list-style-type: none;
         display: inline;
         padding-right: 15px;
+        padding-left: 15px;
     }
     a{
         text-decoration: none;
@@ -46,24 +47,41 @@ table{
         transition: font-size 0.2s ease-in;
     }
 }
+#footerRow{
+    height: auto;
+    text-align: center;
+    padding: 100%;
+    background-color: rgba(41, 41, 41, 80%);
+    opacity: 90%;
+    color: #ffffff;
+}
 p{
     padding-left: 20%;
     padding-right: 20%;
-}
-#aboutSinks{
-
+    font-size: 1.2em;
+    font-weight: bold;
 }
 #typesOfSinks{
     padding-top: 12%;
-    padding-bottom: 12%;
 }
-#featureAndBenefit{
-
+#image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12%;
 }
 .images {
     margin-top: 2%;
     margin-bottom: 5%;
-    width: 50%;
+    width: 35%;
+    height: 400px;
     border-radius: 40px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    transition: width 0.2s ease-out, height 0.2s ease-out;
+}
+.images:hover{
+    width: 37%;
+    height: 420px;
+    transition: width 0.2s ease-in, height 0.2s ease-in;
 }
