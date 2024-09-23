@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     display: flexbox;
@@ -36,15 +36,19 @@ table{
         padding-left: 15px;
     }
     a{
+        border-radius: 20px;
         text-decoration: none;
         color: #ffffff;
-        transition: font-size 0.2s ease-out;
+        transition: font-size 0.2s ease-out, background-color 0.2s ease-out;
     }
     a:hover{
+        padding: 5px;
+        background-color: #ececec;
+        color: #242424;
         font-size: 1.3em;
         cursor: pointer;
         font-weight: bold;
-        transition: font-size 0.2s ease-in;
+        transition: font-size 0.2s ease-in, background-color 0.2s ease-in, color 0.2s ease-in;
     }
 }
 #footerRow{
@@ -53,23 +57,25 @@ table{
     padding: 100%;
     background-color: rgba(41, 41, 41, 80%);
     opacity: 90%;
-    color: #ffffff;
+    color: #ececec;
 }
 p{
     padding-left: 20%;
     padding-right: 20%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
+    color: #242424;
 }
-#typesOfSinks{
-    padding-top: 12%;
+
+#featureAndBenefit{
+    padding-bottom: 5%;
 }
 #image-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 12%;
+    padding-bottom: 5%;
 }
 .images {
     margin-top: 2%;
